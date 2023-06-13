@@ -50,7 +50,7 @@ while (question3 != "yes" && question3 != "no" && question3 != "y" && question3 
 if (question3 === "yes" || question3 === "y") {
   // console.log("Yes! Well done");
   alert("Yes! Well done!");
-} else if (question3 === "no" || question === "n") {
+} else if (question3 === "no" || question3 === "n") {
   // console.log("Ohh no");
   alert("Fernand No!");
 }
@@ -68,16 +68,16 @@ if (question4 === "yes" || question4 === "y") {
   alert("Yes! Well done!");
 } else if (question4 === "no" || question4 === "n") {
   // console.log("Ohh no");
-  alert("Ohh no");
+  alert("Ya'll having a laugh!");
 }
 
 //Question 5
 
-let question5 = prompt("Did I interview ").toLowerCase();
+let question5 = prompt("Did I interview Boris?").toLowerCase();
 
 while (question5 != "yes" && question5 != "no" && question5 != "y" && question5 != "n") {
   alert("Please answer yes/no or y/n only");
-  question5 = prompt("Was I born in London? Please answer yes/no or y/n only").toLowerCase();
+  question5 = prompt("Did I interview Boris?").toLowerCase();
 }
 
 if (question5 === "yes" || question5 === "y") {
@@ -85,5 +85,5 @@ if (question5 === "yes" || question5 === "y") {
   alert("Yes! Well done!");
 } else if (question5 === "no" || question5 === "n") {
   // console.log("Ohh no");
-  alert("Ohh no");
+  alert("immo!");
 }
