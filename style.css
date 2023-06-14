@@ -18,9 +18,9 @@
 }
 
 .heroheading {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Passion One', cursive;
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
 }
 
 .container {
@@ -39,7 +39,7 @@
     width: 25%;
     height: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding: 10px;
     background-color: var(--slt);
     background-size: cover;
     background-position: top;
@@ -59,7 +59,7 @@
     background-size: cover;
     background-position: top;
     margin-bottom: 1rem;
-    padding-left: .5rem;
+    padding: 10px;
     border-radius: 30px;
 }
 
@@ -80,4 +80,7 @@
     font-size: 2rem;
     padding-bottom: 10px;
     text-align: center;
+}
+.spotiy-text {
+    float: right;
 }
