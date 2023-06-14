@@ -87,3 +87,35 @@ if (question5 === "yes" || question5 === "y") {
   // console.log("Ohh no");
   alert("immo!");
 }
+
+let myNumber;
+let question6;
+var attempts=1
+
+/* function guessing() {
+    // choosing my number
+  let myNumber = 7;
+  
+
+    // Get the user to guess a number 
+    while (question6 !== myNumber) {
+      question6 = prompt ('Guess a number from 1 to 100: ');
+      
+      // Correct answer
+      if (question6 == myNumber)
+      alert ("Gongratulations you correct") 
+    
+      
+    // If guessed number is too high or low
+    if (question6 > myNumber) {
+        alert ("Sorry, too high, try again");
+        guessing()
+    }
+    else
+      alert ("Sorry, too low, try again")
+      guessing()
+    }
+}
+
+  guessing()
+  
