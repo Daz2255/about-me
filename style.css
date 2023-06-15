@@ -52,10 +52,11 @@
     margin-right: 5px;
    
 }
-#button {
-    background-color: var(--lol);
+.button {
+    
     color: var(--slt);
-    border-radius: 30px;
+    border-radius: 12px;
+    background-color: var(--lol);
     
 }
 
@@ -95,7 +96,8 @@ h2 {
     background-size: cover;
     background-position: top;
     border-radius: 30px;
-    margin-left: 20px
+    
+
 }
 
 .edphoto {

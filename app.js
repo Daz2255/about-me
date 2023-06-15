@@ -3,7 +3,7 @@
 let username = prompt("Hi, what is your name?");
 const welcomeMsg = alert("Welcome " + username);
 
-
+function quiz() {
 //question 1
 let question = prompt("So " + username + " " + "Was I born in London? Please answer yes/no or y/n only").toLowerCase();
 
@@ -87,30 +87,62 @@ if (question5 === "yes" || question5 === "y") {
   // console.log("Ohh no");
   alert("immo!");
 }
-/*
- function guessing() {
+
+ /*
     // choosing my number
-  let myNumber = 7;
+  const number = "7";
   
+  let question6 = prompt ('Guess a number from 1 to 100, you have" + gues');
 
-    // Get the user to guess a number 
-    while (question6 !== myNumber) {
-      question6 = prompt ('Guess a number from 1 to 100: ');
-      
+  for (let i = 2; i >= 0; i--) {
+    let guesses = i + 1;
+  
       // Correct answer
-      if (question6 == myNumber)
+      if (question6 == number) {
       alert ("Gongratulations you correct") 
-    
-      
+      break;
+      } 
     // If guessed number is too high or low
-    if (question6 > myNumber) {
+      else if (question6 > number) {
         alert ("Sorry, too high, try again");
-        guessing()
-    }
-    else
+        
+      }
+    else if (question < number) {
       alert ("Sorry, too low, try again")
-      guessing()
     }
-}
+    if (i === 0) {
+      alert("The correct number was " + number);
+      break;
+    }
+  }
+  */
+  
+  // const number = "7";
+const number = Math.floor(Math.random() * 50 + 1);
+console.log(number);
 
-  guessing() */
+for (let i = 2; i >= 0; i--) {
+  let guesses = i + 1;
+
+  let guess = prompt("Guess a number between 1 and 50! you have " + guesses + " attempts");
+
+  const guessNum = parseInt(guess);
+
+  if (guessNum === number) {
+    // console.log("You win");
+    alert("You win");
+    break;
+  } else if (guessNum < number) {
+    // console.log("to low");
+    alert("to low");
+  } else if (guessNum > number) {
+    // console.log("to high");
+    alert("to high");
+  }
+
+  if (i === 0) {
+    alert("The correct number was " + number);
+    break;
+  }
+}
+}
