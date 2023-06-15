@@ -87,12 +87,8 @@ if (question5 === "yes" || question5 === "y") {
   // console.log("Ohh no");
   alert("immo!");
 }
-
-let myNumber;
-let question6;
-var attempts=1
-
-/* function guessing() {
+/*
+ function guessing() {
     // choosing my number
   let myNumber = 7;
   
@@ -117,5 +113,4 @@ var attempts=1
     }
 }
 
-  guessing()
-  */
+  guessing() */

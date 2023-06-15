@@ -20,7 +20,7 @@
 
 .heroheading {
     font-family: 'Passion One', cursive;
-    font-size: 3rem;
+    font-size: 7rem;
     text-align: left;
     color: var(--slt);
 }
@@ -52,6 +52,12 @@
     margin-right: 5px;
    
 }
+#button {
+    background-color: var(--lol);
+    color: var(--slt);
+    border-radius: 30px;
+    
+}
 
 .wai-text {
     font-size: 1.5rem;
@@ -66,13 +72,21 @@
 }
 h2 {
     margin-bottom: 10px;
-    color: var(--olv);
+    color: var(--lol);
     font-family: 'Passion One', cursive;
     font-size: 2rem;
 }
 
+.title {
+    margin-bottom: 10px;
+    color: var(--slt);
+    font-family: 'Passion One', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .education {
-    float: right;
+    float: left;
     width: 37.5%;
     height: 100%;
     text-align: center;
@@ -85,7 +99,8 @@ h2 {
 }
 
 .edphoto {
-    width: 50%
+    width: 50%;
+    float: left
 }
 .work-history {
     float: right;
@@ -100,11 +115,12 @@ h2 {
 }
 .workphoto {
     width: 35%;
+    float: left
 }
 
 .spotify {
     float: right;
-    width: 75%;
+    width: 37.5%;
     height: 100%;
     text-align: center;
     color: var(--slt);
@@ -119,8 +135,8 @@ h2 {
 }
 
 .tvshows {
-    float: right;
-    width: 75%;
+    float: left;
+    width: 37.5%;
     height: 100%;
     text-align: center;
     padding-top: 30px;
@@ -128,8 +144,21 @@ h2 {
     background-size: cover;
     background-position: top;
     border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 30px;
 }
 
+
+.music {
+    width: 40%;
+    float: left;
+}
+.tele {
+    width: 40%;
+    float: left;
+}
 .spotiy-text {
     float: right;
 }
