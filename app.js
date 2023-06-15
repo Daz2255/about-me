@@ -1,3 +1,4 @@
+"use strict"
 //visitor name prompt
 
 let username = prompt("Hi, what is your name?");
