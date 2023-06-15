@@ -1,95 +1,140 @@
-"use strict"
+"use strict";
 //visitor name prompt
 
 let username = prompt("Hi, what is your name?");
 const welcomeMsg = alert("Welcome " + username);
 
 function quiz() {
-//question 1
-let question = prompt("So " + username + " " + "Was I born in London? Please answer yes/no or y/n only").toLowerCase();
+  function q1() {
+    let question = prompt(
+      "So " +
+        username +
+        " " +
+        "Was I born in London? Please answer yes/no or y/n only"
+    ).toLowerCase();
 
-while (question != "yes" && question != "no" && question != "y" && question != "n") {
-  alert("Please answer yes/no or y/n only");
-  question = prompt("Was I born in London?").toLowerCase();
-}
+    while (
+      question != "yes" &&
+      question != "no" &&
+      question != "y" &&
+      question != "n"
+    ) {
+      alert("Please answer yes/no or y/n only");
+      question = prompt("Was I born in London?").toLowerCase();
+    }
 
-if (question === "yes" || question === "y") {
-  // console.log("Yes! Well done");
-  alert("Yes! Well done!");
-} else if (question === "no" || question === "n") {
-  // console.log("Ohh no");
-  alert("Ohh no");
-}
+    if (question === "yes" || question === "y") {
+      // console.log("Yes! Well done");
+      alert("Yes! Well done!");
+    } else if (question === "no" || question === "n") {
+      // console.log("Ohh no");
+      alert("Ohh no");
+    }
+  }
 
-//question 2
+  q1();
+  //question 2
+  function q2() {
+    let question2 = prompt("Did I get Mcdonalds every Saturday?").toLowerCase();
 
-let question2 = prompt("Did I get Mcdonalds every Saturday?").toLowerCase();
+    while (
+      question2 != "yes" &&
+      question2 != "no" &&
+      question2 != "y" &&
+      question2 != "n"
+    ) {
+      alert("Please answer yes/no or y/n only");
+      question2 = prompt("Did I get Mcdonalds every Saturday").toLowerCase();
+    }
 
-while (question2 != "yes" && question2 != "no" && question2 != "y" && question2 != "n") {
-  alert("Please answer yes/no or y/n only");
-  question2 = prompt("Was I born in London?").toLowerCase();
-}
+    if (question2 === "yes" || question2 === "y") {
+      // console.log("Yes! Well done");
+      alert("Yes! Well done!");
+    } else if (question2 === "no" || question2 === "n") {
+      // console.log("Ohh no");
+      alert("Ohh no");
+    }
+  }
 
-if (question2 === "yes" || question2 === "y") {
-  // console.log("Yes! Well done");
-  alert("Yes! Well done!");
-} else if (question2 === "no" || question2 === "n") {
-  // console.log("Ohh no");
-  alert("Ohh no");
+  q2();
+  //question3
+  function q3() {
+    let question3 = prompt(
+      "Was my most listened to artist ABBA?"
+    ).toLowerCase();
 
-}
+    while (
+      question3 != "yes" &&
+      question3 != "no" &&
+      question3 != "y" &&
+      question3 != "n"
+    ) {
+      alert("Please answer yes/no or y/n only");
+      question3 = prompt("Was my most listened to artist ABBA?").toLowerCase();
+    }
 
-//question3 
+    if (question3 === "yes" || question3 === "y") {
+      // console.log("Yes! Well done");
+      alert("Yes! Well done!");
+    } else if (question3 === "no" || question3 === "n") {
+      // console.log("Ohh no");
+      alert("Fernand No!");
+    }
+  }
 
-let question3 = prompt("Was my most listened to artist ABBA?").toLowerCase();
+  q3();
+  //question 4
 
-while (question3 != "yes" && question3 != "no" && question3 != "y" && question3 != "n") {
-  alert("Please answer yes/no or y/n only");
-  question3 = prompt("Was my most listened to artist ABBA?").toLowerCase();
-}
+  function q4() {
+    let question4 = prompt(
+      "Am I currently watching Real Housewifes"
+    ).toLowerCase();
 
-if (question3 === "yes" || question3 === "y") {
-  // console.log("Yes! Well done");
-  alert("Yes! Well done!");
-} else if (question3 === "no" || question3 === "n") {
-  // console.log("Ohh no");
-  alert("Fernand No!");
-}
+    while (
+      question4 != "yes" &&
+      question4 != "no" &&
+      question4 != "y" &&
+      question4 != "n"
+    ) {
+      alert("Please answer yes/no or y/n only");
+      question4 = prompt(
+        "Am I currently watching Real Housewifes?"
+      ).toLowerCase();
+    }
 
-//question 4
-let question4 = prompt("Am I currently watching Real Housewifes").toLowerCase();
+    if (question4 === "yes" || question4 === "y") {
+      // console.log("Yes! Well done");
+      alert("Yes! Well done!");
+    } else if (question4 === "no" || question4 === "n") {
+      // console.log("Ohh no");
+      alert("Ya'll having a laugh!");
+    }
+  }
+  q4();
+  //Question 5
+  function q5() {
+    let question5 = prompt("Did I interview Boris?").toLowerCase();
 
-while (question4 != "yes" && question4 != "no" && question4 != "y" && question4 != "n") {
-  alert("Please answer yes/no or y/n only");
-  question4 = prompt("Am I currently watching Real Housewifes?").toLowerCase();
-}
+    while (
+      question5 != "yes" &&
+      question5 != "no" &&
+      question5 != "y" &&
+      question5 != "n"
+    ) {
+      alert("Please answer yes/no or y/n only");
+      question5 = prompt("Did I interview Boris?").toLowerCase();
+    }
 
-if (question4 === "yes" || question4 === "y") {
-  // console.log("Yes! Well done");
-  alert("Yes! Well done!");
-} else if (question4 === "no" || question4 === "n") {
-  // console.log("Ohh no");
-  alert("Ya'll having a laugh!");
-}
-
-//Question 5
-
-let question5 = prompt("Did I interview Boris?").toLowerCase();
-
-while (question5 != "yes" && question5 != "no" && question5 != "y" && question5 != "n") {
-  alert("Please answer yes/no or y/n only");
-  question5 = prompt("Did I interview Boris?").toLowerCase();
-}
-
-if (question5 === "yes" || question5 === "y") {
-  // console.log("Yes! Well done");
-  alert("Yes! Well done!");
-} else if (question5 === "no" || question5 === "n") {
-  // console.log("Ohh no");
-  alert("immo!");
-}
-
- /*
+    if (question5 === "yes" || question5 === "y") {
+      // console.log("Yes! Well done");
+      alert("Yes! Well done!");
+    } else if (question5 === "no" || question5 === "n") {
+      // console.log("Ohh no");
+      alert("immo!");
+    }
+  }
+  q5();
+  /*
     // choosing my number
   const number = "7";
   
@@ -117,33 +162,54 @@ if (question5 === "yes" || question5 === "y") {
     }
   }
   */
-  
+
   // const number = "7";
-const number = Math.floor(Math.random() * 50 + 1);
-console.log(number);
+  function q6() {
+    const number = Math.floor(Math.random() * 50 + 1);
+    console.log(number);
 
-for (let i = 2; i >= 0; i--) {
-  let guesses = i + 1;
+    for (let i = 2; i >= 0; i--) {
+      let guesses = i + 1;
 
-  let guess = prompt("Guess a number between 1 and 50! you have " + guesses + " attempts");
+      let guess = prompt(
+        "Guess a number between 1 and 50! you have " + guesses + " attempts"
+      );
 
-  const guessNum = parseInt(guess);
+      const guessNum = parseInt(guess);
 
-  if (guessNum === number) {
-    // console.log("You win");
-    alert("You win");
-    break;
-  } else if (guessNum < number) {
-    // console.log("to low");
-    alert("to low");
-  } else if (guessNum > number) {
-    // console.log("to high");
-    alert("to high");
+      if (guessNum === number) {
+        // console.log("You win");
+        alert("You win");
+        break;
+      } else if (guessNum < number) {
+        // console.log("to low")
+        alert("to low");
+      } else if (guessNum > number) {
+        // console.log("to high");
+        alert("to high");
+      }
+
+      if (i === 0) {
+        alert("The correct number was " + number);
+        break;
+      }
+    }
   }
+  q6();
 
-  if (i === 0) {
-    alert("The correct number was " + number);
-    break;
+  const myArr = ["coke", "lilt", "fanta"];
+  console.log(myArr);
+  for (let i = 5; i >= 0; i--) {
+    let guesses = i + 1;
+    let guess = prompt(
+      "Can you guess one of my fave fizzy drinks?" + guesses + "attempts"
+    );
+    let guessDrink = guess;
+    if (myArr.includes(guessDrink)) {
+      alert("🥳 You win! 🎉");
+      break;
+    } else {
+      alert("have another go!");
+    }
   }
-}
 }
